@@ -1,0 +1,12 @@
+[alias]
+	s = status
+	b = branch
+[user]
+	email = thomas@yzavard.fr
+	name = Thomas Y
+[core]
+	editor = vim
+[credential]
+	helper = cache --timeout=900
+[merge]
+    tool = vimdiff

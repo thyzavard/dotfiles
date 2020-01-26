@@ -1,0 +1,107 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+general {
+    colors = true
+    color_good = "#ffffff"
+    color_bad = "#dc322f"
+    color_degraded = "#cb4b16"
+    interval = 5
+}
+
+order += "volume master"
+order += "disk /boot"
+order += "disk /"
+order += "wireless wlo1"
+order += "ethernet ens20u1"
+order += "battery 0"
+order += "memory"
+order += "cpu_temperature 0"
+order += "cpu_usage"
+order += "load"
+order += "time"
+
+disk "/boot" {
+    format = " %percentage_used"
+    separator = false
+    separator_block_width = 15
+    low_threshold = 10
+    threshold_type = percentage_free
+}
+
+disk "/" {
+    format = " %percentage_used"
+    separator = true
+    separator_block_width = 15
+    low_threshold = 10
+    threshold_type = percentage_free
+}
+
+cpu_usage {
+    format = " %usage"
+    max_threshold = "95"
+    separator = true
+    separator_block_width = 20
+}
+
+load {
+    format = " %1min %5min"
+    max_threshold = "2"
+    separator = true
+    separator_block_width = 15
+}
+
+cpu_temperature 0 {
+    format = " %degrees°C"
+    max_threshold = "70"
+    path = "/sys/class/hwmon/hwmon1/temp1_input"
+    separator_block_width = 15
+}
+
+wireless wlo1 {
+    format_up = " %essid"
+    format_down = ""
+    separator_block_width = 15
+}
+
+ethernet ens20u1 {
+    format_up = " %ip"
+    format_down = ""
+    separator_block_width = 15
+}
+
+battery 0 {
+    format = "%status %percentage"
+    format_down = ""
+    integer_battery_capacity = true
+    low_threshold = 11
+    threshold_type = percentage
+    hide_seconds = true
+    status_chr = ""
+    status_bat = ""
+    status_unk = ""
+    status_full = ""
+    separator_block_width = 15
+}
+
+memory {
+        format = " %percentage_used"
+        threshold_degraded = "10%"
+        separator_block_width = 15
+}
+
+time {
+    format = " %a %d %b %Y   %H:%M"
+    
+}
+
+volume master {
+    format = "%volume "
+    format_muted = ""
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
+}
