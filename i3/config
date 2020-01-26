@@ -154,6 +154,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Disable windows focus on mouse hover
+focus_follows_mouse no
+
 # Touchpad
 exec xinput --set-prop 'DELL0922:00 04F3:30E3 Touchpad' 'libinput Tapping Enabled' 1 # Enable double tap
 
@@ -227,6 +230,5 @@ exec --no-startup-id feh --bg-fill "/home/thomas/Pictures/Wallpapers/daniel-leon
 exec --no-startup-id flameshot
 exec --no-startup-id thunderbird
 exec --no-startup-id keepassxc
-exec --no-startup-id nextcloud
 exec --no-startup-id blueman-applet
 exec --no-startup-id redshift -l 47.290404:-3.692036
