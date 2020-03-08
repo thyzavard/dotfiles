@@ -8,7 +8,7 @@ export ZSH="/home/thomas/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="agnoster_nord"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -105,6 +105,10 @@ alias ipa="ip -c a"
 alias cdensibs="cd ~/Nextcloud/Etudes/ENSIBS"
 alias config='/usr/bin/git --git-dir=/home/thomas/.dotfiles/ --work-tree=/home/thomas'
 alias adog='git log --all --decorate --oneline --graph'
+alias startvmware='systemctl start vmware-networks.service  vmware-usbarbitrator.service vmware-hostd.service'
+alias stopvmware='systemctl stop vmware-networks.service  vmware-usbarbitrator.service vmware-hostd.service'
+alias statusvmware='systemctl status vmware-networks.service  vmware-usbarbitrator.service vmware-hostd.service'
 
 export WORKON_HOME=~/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
+

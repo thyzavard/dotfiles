@@ -117,12 +117,16 @@ bindsym $mod+Shift+underscore move container to workspace $ws8
 bindsym $mod+Shift+ccedilla move container to workspace $ws9
 bindsym $mod+Shift+agrave move container to workspace $ws10
 
+# move current workspace to the next output
+bindsym $mod+x move workspace to output right
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $alt+Shift+l exec "systemctl suspend"
 
 # Lock screeC
 bindsym $alt+l exec betterlockscreen -l dimblur
@@ -173,6 +177,7 @@ assign [class="code"] $ws3
 
 # Assign app to workspace7
 assign [class="VirtualBox Manager"] $ws7
+assign [class="Vmware"] $ws7
 
 # Assign app to workspace8
 assign [class="discord"] $ws8
@@ -230,5 +235,7 @@ exec --no-startup-id feh --bg-fill "/home/thomas/Pictures/Wallpapers/daniel-leon
 exec --no-startup-id flameshot
 exec --no-startup-id thunderbird
 exec --no-startup-id keepassxc
+exec --no-startup-id nextcloud
 exec --no-startup-id blueman-applet
 exec --no-startup-id redshift -l 47.290404:-3.692036
+exec --no-startup-id xrandr --output eDP1 --auto --output DP3 --auto --right-of eDP1
