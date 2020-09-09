@@ -94,14 +94,11 @@ memory {
 }
 
 time {
-    format = " %a %d %b %Y   %H:%M"
-    
+    format = " %a %d %b %Y   %H:%M" 
 }
 
 volume master {
     format = "%volume "
     format_muted = ""
-    device = "default"
-    mixer = "Master"
-    mixer_idx = 0
+    device = "pulse:3"
 }
