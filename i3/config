@@ -233,7 +233,7 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pamixer --decrease 1
 bindsym XF86AudioMute exec --no-startup-id pamixer --toggle-mute
 
 # Lock screen after inactivity 
-exec --no-startup-id xautolock -time 2 -locker "betterlockscreen -l dimblur"
+exec --no-startup-id xautolock -time 3 -locker "betterlockscreen -l dimblur"
 
 # Startup applications
 exec --no-startup-id feh --bg-fill "/home/thomas/Pictures/Wallpapers/daniel-leone-g30P1zcOzXo-unsplash.jpg"
@@ -242,5 +242,8 @@ exec --no-startup-id thunderbird
 exec --no-startup-id keepassxc
 exec --no-startup-id nextcloud
 exec --no-startup-id blueman-applet
+exec --no-startup-id pasystray
+exec --no-startup-id amixer -Dhw:0 cset name='Master Playback Switch' on
+exec --no-startup-id amixer -Dhw:0 cset name='Master Playback Volume' 100%
 exec --no-startup-id redshift -l 47.290404:-3.692036
 exec --no-startup-id xrandr --output eDP1 --auto --output DP3 --auto --right-of eDP1
