@@ -98,6 +98,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+alias vi="vim"
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias screenconfig="xrandr --output eDP1 --auto --output DP3 --auto --right-of eDP1"
@@ -112,3 +113,5 @@ alias statusvmware='systemctl status vmware-networks.service  vmware-usbarbitrat
 export WORKON_HOME=~/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
 
+# Activate Nord dircolors
+test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
