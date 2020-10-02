@@ -43,13 +43,13 @@ wm-restack = i3
 # clipmenu-widget: showing clipmenu service
 
 # Top modules
-top-left = powermenu date spotify
-top-center = i3 
-top-right = pulseaudio-control network-short filesystem memory cpu temperature battery
+bottom-left = powermenu date spotify
+bottom-center = i3 
+bottom-right = pulseaudio-control network-short filesystem memory cpu temperature battery
 
-systray-top = right
+systray-bottom = right
 
-# global style
+# global <Down>style
 line-size = 6
 
 # Modules configure option
@@ -83,13 +83,6 @@ thermal-zone = 3
 base-temperature = 20
 # Threshold temperature to display warning label (in degrees celsius)
 warn-temperature = 70
-
-# GitHub personal token, generate from https://github.com/settings/tokens/new?scopes=notifications&description=Notifier+for+Polybar
-# where select at least `notifications` option
-github-token = 00ed987a6d7efd532c5b4ca0849c2803228d1b5d
-
-# network module setting
-network-click-left = i3-msg workspace 2
 
 # i3
 # Only show workspaces defined on the same output as the bar

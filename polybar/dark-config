@@ -37,7 +37,10 @@ enable-ipc = true
 [bar/nord-top]
 inherit = bar/base
 
-module-margin = 1
+bottom = true
+
+padding = 2
+module-margin = 2
 
 font-0 = WenQuanYiMicroHei:size=12
 font-1 = Font Awesome 5 Free Solid:pixelsize=12;1
@@ -45,11 +48,17 @@ font-2 = Font Awesome 5 Free Regular:pixelsize=12;1
 font-3 = Font Awesome 5 Brands:pixelsize=8;1
 font-4 = FiraCode-Regular:pixelsize=12
 
-modules-left = ${config.top-left}
-modules-center = ${config.top-center}
-modules-right = ${config.top-right}
+#modules-left = ${config.top-left}
+#modules-center = ${config.top-center}
+#modules-right = ${config.top-right}
 
-tray-position = ${config.systray-top}
+#tray-position = ${config.systray-top}
+
+modules-left = ${config.bottom-left}
+modules-center = ${config.bottom-center}
+modules-right = ${config.bottom-right}
+ 
+tray-position = ${config.systray-bottom}
 
 ; [bar/nord-down]
 ; inherit = bar/base
@@ -68,5 +77,5 @@ tray-position = ${config.systray-top}
 ; modules-left = ${config.bottom-left}
 ; modules-center = ${config.bottom-center}
 ; modules-right = ${config.bottom-right}
-; 
+ 
 ; tray-position = ${config.systray-bottom}

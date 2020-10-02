@@ -230,6 +230,20 @@ label-connected-underline = ${colors.nord9}
 label-disconnected = 
 label-disconnected-foreground = ${colors.urgent}
 
+[module/network-cyber]
+type = internal/network
+interface = ${config.wireless_cyberrange}
+
+interval = 1
+
+format-connected = <label-connected>
+format-disconnected = <label-disconnected>
+
+label-connected = %{F#81A1C1}%{F-} %essid% (%signal%%)
+label-connected-underline = ${colors.nord9}
+label-disconnected = 
+label-disconnected-foreground = ${colors.urgent}
+
 [module/spotify]
 type = custom/script
 
