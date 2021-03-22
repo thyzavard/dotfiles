@@ -114,4 +114,4 @@ export WORKON_HOME=~/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
 
 # Activate Nord dircolors
-test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
+test -r ~/.dir_colors && eval $(dircolors ~/.dir_colors)

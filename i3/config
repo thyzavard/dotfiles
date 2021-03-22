@@ -25,6 +25,9 @@ bindsym $mod+Shift+d exec --no-startup-id rofi -show drun -hide-scrollbar -show-
 # Start rofi displaying launched applucations in different workspaces
 bindsym $mod+w exec --no-startup-id rofi -show window -hide-scrollbar
 
+# Alt-tab equivalent
+bindsym $mod+Tab workspace back_and_forth
+
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -169,6 +172,7 @@ for_window [class="Evince"] floating enable
 for_window [class="VirtualBox Manager"] floating enable
 for_window [class="File-roller"] floating enable
 for_window [title="Microsoft Teams Notification"] floating enable
+for_window [title="^Android Emulator -"] floating enable
 
 # Assign app to workspace1
 assign [class="firefox"] $ws1
