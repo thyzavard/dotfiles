@@ -1,7 +1,11 @@
 # Dotfiles
 
-[[./screenshot.png]]
-<img src="/../screenshots/screenshot_window.png">
+<img src="./screenshots/screenshot_window.png" width="100%" />
+
+<p align="center">
+<psan><img src="./screenshots/screenshot_rofi.png"  height="192"/></span>
+<psan><img src="./screenshots/screenshot_alert.png"  height="192"/></span>
+</p>
 
 ------
 
