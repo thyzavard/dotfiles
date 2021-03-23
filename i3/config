@@ -22,6 +22,9 @@ bindsym $mod+d exec --no-startup-id rofi -show run -hide-scrollbar
 # start rofi displaying only desktop applications
 bindsym $mod+Shift+d exec --no-startup-id rofi -show drun -hide-scrollbar -show-icons
 
+# start rofi in ssh mode
+bindsym $mod+Shift+s exec --no-startup-id rofi -show ssh
+
 # Start rofi displaying launched applucations in different workspaces
 bindsym $mod+w exec --no-startup-id rofi -show window -hide-scrollbar
 
