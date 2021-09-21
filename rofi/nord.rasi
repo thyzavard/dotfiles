@@ -96,6 +96,10 @@
     border-color: @nord1;
     spacing:    10;
 }
+element-text, element-icon {
+    background-color: inherit;
+    text-color:       inherit;
+}
 #button {
     spacing: 0;
     background-color: @nord1;

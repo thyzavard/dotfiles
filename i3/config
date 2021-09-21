@@ -192,6 +192,7 @@ assign [class="Vmware"] $ws7
 assign [class="discord"] $ws8
 assign [class="Telegram"] $ws8
 assign [class="Microsoft Teams - Preview"] $ws8
+assign [class="Signal"] $ws8
 
 # Assign app to workspace9 
 assign [class="Thunderbird"] $ws9

@@ -1,5 +1,5 @@
 configuration {
-	modi: "run,drun,window,ssh";
+	modi: "run,drun,window";
 	width: 40;
 	lines: 12;
 	columns: 1;
@@ -10,8 +10,6 @@ configuration {
 	fixed-num-lines: false;
 	show-icons: true;
 	terminal: "terminator";
-    ssh-client: "ssh";
-    ssh-command: "{terminal} -e '{ssh-client} {host}'";
     run-command: "{cmd}";
     run-shell-command: "{terminal} -e '{cmd}'";
 	window-match-fields: "all";
@@ -33,7 +31,6 @@ configuration {
 	combi-hide-mode-prefix: true;
 	display-window: "";
 	display-run: "";
-	display-ssh: "";
 	display-drun: "🔍";
 	display-combi: "Combined";
 	kb-primary-paste: "Control+Y";
@@ -57,3 +54,5 @@ configuration {
 	kb-row-first: "Alt+less,Home,KP_Home";
 	kb-row-last: "Alt+greater,End,KP_End";
 }
+
+@theme "nord"

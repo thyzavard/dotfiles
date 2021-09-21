@@ -2,8 +2,8 @@
 	s = status
 	b = branch
 [user]
-	email = thomas@yzavard.fr
-	name = Thomas Y
+	email = thomas.yzavard@pm.me
+	name = thyzavard
 [core]
 	editor = vim
 [credential]
